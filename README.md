@@ -4,7 +4,7 @@
 
 docker-compose run web rake db:create
 
-### **POSTGRES:** 
+### **POSTGRES:**
 
 name: myapp_development
 
