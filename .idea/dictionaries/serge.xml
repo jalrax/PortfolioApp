@@ -1,10 +1,16 @@
 <component name="ProjectDictionaryState">
   <dictionary name="serge">
     <words>
+      <w>authenticatable</w>
       <w>blogs</w>
       <w>confirmable</w>
       <w>myapp</w>
+      <w>omniauthable</w>
       <w>reconfirmable</w>
+      <w>registerable</w>
+      <w>rememberable</w>
+      <w>timeoutable</w>
+      <w>trackable</w>
     </words>
   </dictionary>
 </component>
