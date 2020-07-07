@@ -19,6 +19,7 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
+    @technologies = @portfolio_item.technologies
   end
 
   def create
@@ -60,7 +61,7 @@ class PortfoliosController < ApplicationController
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
-                                      technologies_attributes: [:name]
+                                      technologies_attributes: [:id, :name]
     )
   end
 end
