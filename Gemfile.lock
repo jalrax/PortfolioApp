@@ -80,6 +80,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
+    jalrax_view_tool (0.1.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
     jquery-rails (4.4.0)
@@ -212,6 +213,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.7, >= 4.7.2)
   friendly_id (~> 5.2.4)
+  jalrax_view_tool (~> 0.1.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
