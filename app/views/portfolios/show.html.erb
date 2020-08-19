@@ -7,5 +7,5 @@
   <p><%= t.name %></p>
 <% end %>
 
-<%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %> |
+<%= link_to 'Edit', edit_portfolio_path(@portfolio_item) if logged_in?(:site_admin) %> |
 <%= link_to 'Back', portfolios_path %>
