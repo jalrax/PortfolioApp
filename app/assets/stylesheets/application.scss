@@ -113,9 +113,16 @@ body {
  */
 .card-body {
   color: #000;
+  form + a {
+    margin-top: 20px;
+  }
   a {
     display: block;
-    margin-top: 20px;
     color: #000;
   }
+}
+
+.login {
+  width: 55%;
+  margin: 0 auto;
 }
