@@ -1,11 +1,14 @@
 version: '3'
 services:
-  db:
+  postgres:
     image: postgres
+    container_name: postgres
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
       - "3434:5432"
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
   web:
     tty: true
     stdin_open: true
@@ -19,7 +22,7 @@ services:
     ports:
       - "3232:3000"
     depends_on:
-      - db
+      - postgres
 volumes:
   postgres:
   cache:
