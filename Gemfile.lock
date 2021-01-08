@@ -222,7 +222,7 @@ DEPENDENCIES
   petergate (~> 2.0, >= 2.0.1)
   pg (>= 0.18, < 2.0)
   pry-byebug
-  puma (~> 3.11)
+  puma (~> 3.12)
   rails (~> 5.2.4, >= 5.2.4.1)
   sass-rails (~> 5.0)
   spring
@@ -233,7 +233,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.5.7p206
+   ruby 2.5.8p224
 
 BUNDLED WITH
    1.17.3
