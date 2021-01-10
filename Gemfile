@@ -51,7 +51,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
@@ -60,3 +59,5 @@ gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
 gem 'jalrax_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.6'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
