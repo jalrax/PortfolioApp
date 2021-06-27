@@ -16,7 +16,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    JalraxViewTool::Renderer.copyright('Sergey Repin', 'All right reserved')
+    JalraxViewTool::Renderer.copyright('Sergey Repin', 'All rights reserved')
   end
 
   def nav_items
