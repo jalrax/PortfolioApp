@@ -18,6 +18,6 @@ http://localhost:3232/
 
 ### **DEVELOPMENT:**
 
-######After adding new gems run:
+###### After adding new gems run:
 
 docker-compose build
