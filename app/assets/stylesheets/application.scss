@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -199,4 +199,14 @@ body {
 
 .app-footer {
   color: white;
+}
+
+.about,
+.contact {
+  padding: 20px 30px 30px;
+  background-color: rgba(white, .15);
+
+  h1 {
+    margin-bottom: 30px;
+  }
 }
