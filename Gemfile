@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.8'
+ruby '2.7.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
@@ -39,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -50,6 +51,23 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'friendly_id', '~> 5.2.4'
+gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'bootstrap', '~> 4.5.0'
+gem 'jquery-rails'
+gem 'jalrax_view_tool', '~> 0.1.0'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.6'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'carrierwave', '~> 2.2', '>= 2.2.2'
+gem 'carrierwave-aws', '~> 1.5'
+gem 'mini_magick', '~> 4.11'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
+gem 'cocoon', '~> 1.2', '>= 1.2.9'
+gem 'gritter', '~> 1.2'
+gem 'redis', '~> 4.4'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.3'

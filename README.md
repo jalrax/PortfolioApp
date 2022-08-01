@@ -4,7 +4,7 @@
 
 docker-compose run web rake db:create
 
-### **POSTGRES:** 
+### **POSTGRES:**
 
 name: myapp_development
 
@@ -15,3 +15,9 @@ port: 3434
 docker-compose up
 
 http://localhost:3232/
+
+### **DEVELOPMENT:**
+
+###### After adding new gems run:
+
+docker-compose build

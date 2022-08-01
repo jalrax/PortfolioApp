@@ -1,0 +1,38 @@
+<%= form_with(model: blog, local: true) do |form| %>
+  <% if blog.errors.any? %>
+    <% blog.errors.full_messages.each do |error| %>
+      <%= alert_generator(error) %>
+    <% end %>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.text_field :title, class: 'form-control', placeholder: 'Title' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :topic_id %>
+    <%= form.collection_select(:topic_id, Topic.all, :id, :title,
+                            {
+                              selected: blog.topic.id,
+                              include_blank: true
+                            },
+                            class: 'form-control'
+        )
+    %>
+  </div>
+
+  <div class="form-group">
+    <%= form.radio_button :status, 'draft', id: 'draft' %>
+    <%= form.label :status, 'Draft', for: 'draft' %>
+    <%= form.radio_button :status, 'published', id: 'published' %>
+    <%= form.label :status, 'Published', for: 'published' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_area :body, rows: 10, class: 'form-control', placeholder: 'Content' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit 'Submit', class: 'btn btn-primary' %>
+  </div>
+<% end %>

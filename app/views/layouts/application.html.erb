@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Myapp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <title><%= @page_title %></title>
+  <%= csrf_meta_tags %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+
+  <meta name="keywords" content="<%= @seo_keywords %>"/>
+  <%= favicon_link_tag 'favicon.png' %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <%= video_tag 'bg.mp4', id: 'background', autoplay: true, loop: true, muted: true, poster: 'bg.jpg' %>
+      <%= render "shared/application_nav" %>
+      <%= yield %>
+      <%= render "shared/application_footer" %>
+      <%= alerts %>
+    </div>
+  </div>
+</div>
+</body>
 </html>
