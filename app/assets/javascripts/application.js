@@ -17,6 +17,8 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= require lib/typed
+//= require typed-implementation
 //= require activestorage
 //= require cable
 //= require turbolinks
